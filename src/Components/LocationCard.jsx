@@ -2,7 +2,6 @@ import React from 'react'
 import '../Styles/Components/LocationCard.css'
 
 const LocationCard = ({ locationDetail }) => {
-    console.log(locationDetail)
     return (
         <div className="LocationCard">
             <img

@@ -1,0 +1,38 @@
+.Caroussel{
+    height: 415px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:425px ) {
+    .Caroussel{
+        height: 255px;
+    }
+}
+
+.Caroussel__img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.Caroussel__span{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Caroussel__span__p{
+    margin: 10px;
+    font-size: 3rem;
+}

@@ -1,0 +1,11 @@
+.LocationDetails{
+    width: 100%;
+}
+
+@media screen and (min-width:769px) {
+    .LocationDetails{
+    width: auto;
+    padding-left: 30px; 
+    padding-right: 30px;  
+    }
+}

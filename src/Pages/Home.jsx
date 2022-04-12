@@ -9,7 +9,7 @@ const Home = () => {
     const [listingLocation, setListingLocation] = useState([])
 
     useEffect(() => {
-        fetch('mock.JSON')
+        fetch('./mock.JSON')
             .then((res) => res.json())
             .then((data) => setListingLocation(data))
             .catch((error) => console.log(error))
