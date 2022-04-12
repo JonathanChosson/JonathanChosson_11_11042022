@@ -1,0 +1,43 @@
+.home{
+    width: 100%;
+}
+
+.home__divImg{
+    margin: 20px 20px 10px 20px;
+    overflow: hidden;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__divImg__img{
+    width: 100%;
+    object-fit: contain;
+    z-index: 0;
+}
+
+.home__divImg__h1{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.418);
+}
+
+.home__divImg__h1, h1{
+    font-size: clamp(1rem, 0.4286rem + 2.8571vw, 3rem);
+}
+
+@media screen and (min-width:769px) {
+    .home{
+    width: auto;
+    padding-left: 30px; 
+    padding-right: 30px;  
+    }
+}
