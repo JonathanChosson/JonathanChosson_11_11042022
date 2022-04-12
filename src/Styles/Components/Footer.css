@@ -1,0 +1,17 @@
+.Footer{
+    margin: 20px;
+    padding: 10px;
+    background-color: black;
+    color: White;
+}
+
+.Footer__p, .Footer__p--copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.Footer__p--copyright{
+    font-size: 0.9rem;
+}

@@ -1,6 +1,6 @@
 .LocationCard{
-    width: 320px;
-    height: 320px;
+    width: 260px;
+    height: 260px;
     overflow: hidden;
     /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%); */
     border-radius: 10px;
@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 
 .LocationCard__img{

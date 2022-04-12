@@ -1,6 +1,9 @@
 .ListLocation{
     margin: 20px;
-    padding: 30px;
     border-radius: 25px;
     background-color: #F6F6F6;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }

@@ -2,10 +2,12 @@ import React from 'react'
 import '../Styles/Components/ListLocation.css'
 import LocationCard from './LocationCard'
 
-const ListLocation = () => {
+const ListLocation = ({ listingLocation }) => {
     return (
         <div className="ListLocation">
-            <LocationCard />
+            {listingLocation.map((locationDetail, index) => (
+                <LocationCard key={index} locationDetail={locationDetail} />
+            ))}
         </div>
     )
 }
