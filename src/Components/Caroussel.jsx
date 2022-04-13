@@ -4,14 +4,14 @@ import chevronDroite from '../Assets/chevron-droite.png'
 import chevronGauche from '../Assets/chevron-gauche.png'
 
 const Caroussel = ({ detailLocation }) => {
-    const [isPhoto, setIsPhoto] = useState(false)
+    const [isPhoto, setIsPhoto] = useState(true)
     const [album, setAlbum] = useState([])
 
     useEffect(() => {
         setAlbum(detailLocation.pictures)
         if (detailLocation.pictures) {
-            if (detailLocation.pictures.length > 0) {
-                setIsPhoto(true)
+            if (detailLocation.pictures.length === 1) {
+                setIsPhoto(false)
             }
         }
     }, [detailLocation])
