@@ -1,52 +1,52 @@
-.LocationDetails{
+.LocationDetails {
     width: 100%;
 }
 
-@media screen and (min-width:769px) {
-    .LocationDetails{
-    width: auto;
-    padding-left: 30px; 
-    padding-right: 30px;  
+@media screen and (min-width: 769px) {
+    .LocationDetails {
+        width: auto;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
-.LocationDetails__info{
+.LocationDetails__info {
     margin: 20px;
-    color: #FF6060;
+    color: #ff6060;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-@media screen and (max-width:425px) {
-    .LocationDetails__info{
-    flex-direction: column; 
-    align-items: flex-start;
+@media screen and (max-width: 425px) {
+    .LocationDetails__info {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
-p{
+p {
     margin: 0px;
 }
 
-.LocationDetails__info__adress--title{
+.LocationDetails__info__adress--title {
     font-size: clamp(1rem, 0.8rem + 0.8vw, 3rem);
     font-weight: 500;
     margin-bottom: 5px;
 }
 
-.LocationDetails__info__adress--city{
+.LocationDetails__info__adress--city {
     font-weight: 400;
     font-size: clamp(1rem, 0.7rem + 0.6vw, 3rem);
 }
 
-.LocationDetails__info__rating{
+.LocationDetails__info__rating {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.LocationDetails__info__rating__host{
+.LocationDetails__info__rating__host {
     order: 1;
     display: flex;
     justify-content: center;
@@ -54,42 +54,57 @@ p{
     margin-bottom: 5px;
 }
 
-.LocationDetails__info__rating__host__img{
+.LocationDetails__info__rating__host__img {
     width: 64px;
     height: 64px;
     border-radius: 50px;
     margin-left: 5px;
 }
 
-.LocationDetails__info__rating__host__p{
+.LocationDetails__info__rating__host__p {
     width: 100px;
     text-align: right;
     padding-right: 10px;
 }
 
-@media screen and (max-width:425px) {
-    .LocationDetails__info__rating{
+@media screen and (max-width: 425px) {
+    .LocationDetails__info__rating {
+        margin-top: 15px;
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
     }
-    .LocationDetails__info__rating--rate{
-        order:1;
+    .LocationDetails__info__rating--rate {
+        order: 1;
     }
-    .LocationDetails__info__rating__host{
+    .LocationDetails__info__rating__host {
         order: 2;
     }
-    .LocationDetails__info__rating--rate__img{
+    .LocationDetails__info__rating--rate__img {
         width: 20px !important;
         height: 20px !important;
     }
 }
 
-.LocationDetails__info__rating--rate{
-    order:2;
+.LocationDetails__info__rating--rate {
+    order: 2;
 }
 
-.LocationDetails__info__rating--rate__img{
+.LocationDetails__info__rating--rate__img {
     width: 30px;
     height: 30px;
+}
+
+.LocationDetails__content {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    .LocationDetails__content {
+        flex-direction: column;
+        align-items: center;
+    }
 }

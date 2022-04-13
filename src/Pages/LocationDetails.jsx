@@ -4,6 +4,7 @@ import Caroussel from '../Components/Caroussel'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 import Tags from '../Components/Tags'
+import DropDown from '../Components/DropDown'
 import '../Styles/Pages/LocationDetails.css'
 import etoilePleine from '../Assets/etoile-pleine.png'
 import etoileVide from '../Assets/etoile-vide.png'
@@ -76,6 +77,16 @@ const LocationDetails = () => {
                 ) : (
                     ''
                 )}
+            </div>
+            <div className="LocationDetails__content">
+                <DropDown
+                    title="Description"
+                    content={detailLocation.description}
+                />
+                <DropDown
+                    title="Equipements"
+                    content={detailLocation.equipments}
+                />
             </div>
             <Footer />
         </div>
