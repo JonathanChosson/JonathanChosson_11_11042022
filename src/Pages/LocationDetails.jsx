@@ -18,11 +18,18 @@ const LocationDetails = () => {
     useEffect(() => {
         fetch('../mock.JSON')
             .then((res) => res.json())
-            .then((data) =>
-                setDetailLocation(
-                    data.filter((location) => location.id === id)[0]
-                )
-            )
+            .then((data) => {
+                if (
+                    data.filter((location) => location.id === id)[0] ===
+                    undefined
+                ) {
+                    window.location.href = '../Error'
+                } else {
+                    setDetailLocation(
+                        data.filter((location) => location.id === id)[0]
+                    )
+                }
+            })
             .catch((error) => console.log(error))
     }, [id])
 
