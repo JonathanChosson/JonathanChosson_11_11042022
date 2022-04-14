@@ -1,4 +1,9 @@
-.DropDown {
+.DropDown__100 {
+    width: 100%;
+    position: relative;
+}
+
+.DropDown__45 {
     width: 45%;
     position: relative;
 }

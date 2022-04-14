@@ -89,10 +89,12 @@ const LocationDetails = () => {
                 <DropDown
                     title="Description"
                     content={detailLocation.description}
+                    largeur="DropDown__45"
                 />
                 <DropDown
                     title="Equipements"
                     content={detailLocation.equipments}
+                    largeur="DropDown__45"
                 />
             </div>
             <Footer />
@@ -101,4 +103,3 @@ const LocationDetails = () => {
 }
 
 export default LocationDetails
-// console.log(parseInt(detailLocation.rating))

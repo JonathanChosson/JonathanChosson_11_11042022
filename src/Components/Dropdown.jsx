@@ -3,7 +3,7 @@ import '../Styles/Components/DropDown.css'
 import chevronHaut from '../Assets/chevronHaut.png'
 import chevronBas from '../Assets/chevronBas.png'
 
-const DropDown = ({ title, content }) => {
+const DropDown = ({ title, content, largeur }) => {
     function handleClickToggle(e) {
         if (e.target.id === 'Ouvrir') {
             e.target.parentNode.nextSibling.classList.remove('invisible')
@@ -19,7 +19,7 @@ const DropDown = ({ title, content }) => {
     }
 
     return (
-        <div className="DropDown">
+        <div className={largeur}>
             <div className="DropDown__title">
                 <p>{title}</p>
                 <img
