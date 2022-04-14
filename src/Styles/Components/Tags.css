@@ -1,13 +1,16 @@
-.Tags{
+.Tags {
     margin-top: 20px;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
 }
 
 .Tags__p {
     font-size: 0.8rem;
     color: white;
-    background-color: #FF6060;
+    background-color: #ff6060;
     margin-right: 5px;
+    margin-top: 5px;
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
     display: flex;
