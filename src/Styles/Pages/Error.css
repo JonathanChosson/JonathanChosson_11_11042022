@@ -1,0 +1,27 @@
+.Error {
+    width: 100%;
+}
+
+.Error__content {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ff6060;
+}
+
+.Error__content__p--404 {
+    margin-top: 30px;
+    font-size: 8rem;
+}
+
+.Error__content__p--Oups {
+    font-size: 1.5rem;
+}
+
+.Error__content__link {
+    margin-top: 300px;
+    color: #ff6060;
+}
