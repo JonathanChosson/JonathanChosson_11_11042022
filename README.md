@@ -52,4 +52,3 @@ $ yarn start
 ## Licence
 
 <img src='https://forthebadge.com/images/badges/open-source.svg' />
-```
