@@ -1,22 +1,15 @@
 import React from 'react'
 import '../Styles/Pages/About.css'
 import Header from '../Components/Header'
-import bgApropos from '../Assets/bg-apropos.png'
 import Footer from '../Components/Footer'
 import DropDown from '../Components/DropDown'
+import Banner from '../Components/Banner'
 
 const About = () => {
     return (
         <div className="About">
             <Header />
-            <div className="About__divImg">
-                <img
-                    className="About__divImg__img"
-                    src={bgApropos}
-                    alt="Chez vous, partout et ailleurs"
-                />
-                <span className="About__divImg__h1"></span>
-            </div>
+            <Banner />
             <div className="About__content">
                 <DropDown
                     title="Fiabilité"
