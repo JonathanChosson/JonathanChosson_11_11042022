@@ -43,6 +43,7 @@ Lancer un serveur local :
 
 ```
 $ yarn start
+```
 
 ## Auteur
 
